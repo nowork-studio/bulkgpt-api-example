@@ -13,9 +13,6 @@ headers = {
 
 response = requests.post(url, json=payload, headers=headers)
 
-print(response.status_code)
-# output: 200
-
 print(response.json())
 """
 Output Example:

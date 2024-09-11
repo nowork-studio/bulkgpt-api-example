@@ -22,8 +22,13 @@ headers = {
 
 response = requests.post(url, json=payload, headers=headers)
 
-print(response.status_code)
-# output: 200
-
 print(response.json())
-# output: {'taskId': 'MTcyNjAzNjU5M18yMDI0LTA5LTExLTA2OjM2OjMz'}
+"""
+Output Example:
+{
+    'taskId': 'MTcyNjAzNjU5M18yMDI0LTA5LTExLTA2OjM2OjMz'
+}
+
+Explaination:
+    taskId: You will be getting the status, progress and download url by providing this taskId the status API, see status API documentation
+"""
